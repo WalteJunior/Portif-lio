@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #2f2c2b;
+}
+/*//////Home//////*/
+header{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F22522;
+}
+.sigla{
+    position: relative;
+    width: 7vw;
+    height: 14vh;
+    top: 1vh;
+    left: 2vw;
+}
+ul{
+    display: flex;
+    width: 25vw;
+    justify-content: space-evenly;
+}
+li{
+    margin-top: 6vh;
+    font-size: 17px;
+    list-style: none;
+    color: black;
+}
+li:hover{
+    cursor: pointer;
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+/*/////Main/////*/
+section{
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+.hi{
+    animation: foto;
+    animation-duration: 3s;
+}
+.me{
+    width: 25vw;
+    border-radius: 50%;
+}
+.whoareyou{
+    position: relative;
+    top: 10vh;
+    left: 10vw;
+}
+.whoareyou h1{
+    width: 26vw;
+    border: sol;
+    font-size: 55px;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    animation: blinkcursor 500ms infinite steps(40) normal, typing 2s steps(40) 1s normal both;
+}
+.whoareyou h2{
+    width: 19vw;
+    font-size: 45px;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    animation: blinkcursor 500ms infinite steps(40) normal, typing 2s steps(40) 3s normal both;
+}
+h3{
+    width: 22vw;
+    color: #ffd700;
+    font-size: 45px;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    animation: blinkcursor 500ms infinite steps(40) normal, typing 2s steps(40) 5s normal both;
+
+}
+h4{
+    width: 32vw;
+    color: #ffd700;
+    font-size: 45px;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    animation: blinkcursor 500ms infinite steps(40) normal, typing 2s steps(40) 7s normal both;
+
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{width: 1;}
+}
+@keyframes blinkcursor{
+    from{
+    border-right-color: rgba(255, 255, 255, 0.75);
+
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+@keyframes foto{
+    from{
+    position: relative;
+    left: -50vw;
+    }
+    to{
+        position: relative;
+        left: 0vw;
+    }
+}
+/*////About/////*/
+main{
+    display: flex;
+}
+.Gallery{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    animation: showoff;
+    animation-duration: 3s;
+}
+.Gallery img{
+    width: 25vw;
+    height: 50vh;
+    border-radius: 100%;
+    margin-bottom: 2vh;
+}
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.box{
+    width: 25vw;
+    height: 40vh;
+    margin-bottom: 15vh;
+    background-color: #F22522;
+    animation: movimento;
+    animation-duration: 3s;
+}
+.box h2{
+    text-align: center;
+    border-bottom: #ffd700 solid;
+    margin-bottom: 2vh;
+}
+p{
+    text-align: justify;
+    font-weight: 200;
+    font-size: medium;
+}
+@keyframes movimento{
+    from{
+        margin: -50vw;
+    }
+    to{
+        margin: 50;
+    }
+}
+@keyframes showoff{
+    from{
+        position: relative;
+        left: -50vw;
+    }
+    to{
+        position: relative;
+        left: 0;
+    }
+}
+/*////Portfile////*/
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mother-box{
+    position: relative;
+    margin-right: 2vw;
+    animation: showoff;
+    animation-duration: 3s;
+}
+.mother-box img{
+    width: 25vw;
+    height: 50vh;
+}
+.mother-box img:hover{
+    cursor: pointer;
+
+}
+.Title{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    bottom: 0.5vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: end;
+    background-color: #F22522;
+}
+footer img{
+    width:3.5vw;
+}
